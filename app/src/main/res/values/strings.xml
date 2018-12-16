@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Flicker</string>
+    <string name="search_hint">Search for images on flickr</string>
+    <string name="no_results_found">No results found.</string>
+    <string name="search_button">Search Button</string>
+    <string name="image">Image</string>
+</resources>

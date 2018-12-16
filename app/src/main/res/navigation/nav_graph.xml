@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.dattilio.flicker.search.SearchFragment"
+        android:label="Image Search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/openImageAction"
+            app:destination="@id/imageFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.dattilio.flicker.image.ImageFragment"
+        android:label="{image}"
+        tools:layout="@layout/fragment_image">
+        <argument
+            android:name="image"
+            app:argType="com.dattilio.flicker.search.model.Image" />
+    </fragment>
+
+</navigation>
